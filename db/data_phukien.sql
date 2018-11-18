@@ -254,8 +254,44 @@ CREATE TABLE IF NOT EXISTS `stores` (
 -- Dumping data for table `stores`
 --
 
-INSERT INTO `stores` (`id`, `name`, `address`, `image`, `created_at`, `updated_at`) VALUES
-(1,'The Coffee House','68 HUỲNH VĂN BÁNH,PHƯỜNG 15, QUẬN PHÚ NHUẬN','http://file.hstatic.net/1000075078/article/img_4483_grande.jpg');
+--DUYEN: Insert data into STORES table
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES('The Coffee House','68 HUỲNH VĂN BÁNH,PHƯỜNG 15, QUẬN PHÚ NHUẬN','http://file.hstatic.net/1000075078/article/img_4483_grande.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Morico - Contemporary Japanese Lifestyle - Lê Lợi ',' 30 Lê Lợi, P. Bến Nghé, Quận 1 , TP. HCM ','https://images.foody.vn/res/g1/595/prof/s640x400/foody-upload-api-foody-mobile-10-jpg-180508140146.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Monkey In Black Cafe ',' 2 chi nhánh ','https://images.foody.vn/res/g9/89822/prof/s640x400/foody-mobile-zas-jpg-258-636086627918162406.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Oromia Coffee - Nam Kỳ Khởi Nghĩa ',' 193A/D3 Nam Kỳ Khởi Nghĩa, Quận 3 , TP. HCM ','https://images.foody.vn/res/g12/112158/prof/s640x400/foody-mobile-1-jpg-194-636289977329979410.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Starbucks Coffee - HCM ',' 25 chi nhánh ','https://images.foody.vn/res/g2/15031/prof/s640x400/foody-mobile-mobile-jpg-409-635744522405981690.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Morico - Modern Japanese - Food, Sushi & Dessert ',' 3 chi nhánh ','https://images.foody.vn/res/g1/742/prof/s640x400/foody-upload-api-foody-mobile-9-jpg-180508140028.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Partea ',' 2 chi nhánh ','https://images.foody.vn/res/g8/77729/prof/s640x400/foody-mobile-12-jpg-868-636171531644694064.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Đen Đá Cafe ',' 7 chi nhánh ','https://images.foody.vn/res/g12/110335/prof/s640x400/foody-mobile-mhfo7qz6-jpg-187-636130047827225698.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Morico - Contemporary Japanese Lifestyle ',' 2 chi nhánh ','https://images.foody.vn/res/g1/900/prof/s640x400/foody-upload-api-foody-mobile-7-jpg-180508135106.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Paris Baguette - Cao Thắng ',' 1 Cao Thắng, P. 2, Quận 3 , TP. HCM ','https://images.foody.vn/res/g1/4336/prof/s640x400/foody-upload-api-foody-mobile--b5e49debee037df4559-180704101653.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Phúc Long Coffee & Tea Express ',' 30 chi nhánh ','https://images.foody.vn/res/g9/87015/prof/s640x400/foody-mobile-phuc-long-ly-tu-tron-343-635791628128985595.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Trà Sữa Gong Cha - 貢茶 - Hồ Tùng Mậu ',' 83 Hồ Tùng Mậu, Quận 1 , TP. HCM ','https://images.foody.vn/res/g10/96530/prof/s640x400/foody-mobile-gong-cha2-jpg-305-636173909122516269.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Moon Fast Food - Món Hàn - Xuân Hồng ',' 53 Xuân Hồng, P. 12, Quận Tân Bình , TP. HCM ','https://images.foody.vn/res/g8/71782/prof/s640x400/foody-mobile-mon-fastfood-mb-jpg-441-635895077676626146.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Morico - Contemporary Japanese Lifestyle - Vincom Center ',' Tầng B3 Vincom Center, 70 - 72 Lê Thánh Tôn, P. Bến Nghé, Quận 1 , TP. HCM ','https://images.foody.vn/res/g1/742/prof/s640x400/foody-upload-api-foody-mobile-9-jpg-180508140028.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Paris Baguette ',' 4 chi nhánh ','https://images.foody.vn/res/g1/4336/prof/s640x400/foody-upload-api-foody-mobile--b5e49debee037df4559-180704101653.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Moon Fast Food - Món Hàn - Xuân Hồng ',' 53 Xuân Hồng, P. 12, Quận Tân Bình , TP. HCM ','https://images.foody.vn/res/g8/71782/prof/s640x400/foody-mobile-mon-fastfood-mb-jpg-441-635895077676626146.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Fly Cupcake ',' 2 chi nhánh ','https://images.foody.vn/res/g1/6676/prof/s640x400/foody-mobile-flycupcake-jpg-612-635657179559706401.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Star Kitchen ',' 3 chi nhánh ','https://images.foody.vn/res/g10/90625/prof/s640x400/foody-upload-api-foody-mobile-21-jpg-181114113351.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Dallas Cakes & Coffee ',' 5 chi nhánh ','https://images.foody.vn/res/g1/9138/prof/s640x400/foody-upload-api-foody-mobile-3-jpg-180409101750.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Buffet Windsor - Cafe Central An Dong - Windsor Plaza ',' Windsor Plaza, 18 An Dương Vương, Quận 5 , TP. HCM ','https://images.foody.vn/res/g1/8/prof/s640x400/foody-mobile-dpxxrdae-jpg-176-635851879399811855.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống TOUS les JOURS SG ',' 6 chi nhánh ','https://images.foody.vn/res/g1/520/prof/s640x400/foody-upload-api-foody-mobile-tlj-jpg-180521103523.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Chewy Chewy - Cafe & Bánh - Trần Hưng Đạo ',' 34 Trần Hưng Đạo, P. Phạm Ngũ Lão, Quận 1 , TP. HCM ','https://images.foody.vn/res/g1/4139/prof/s640x400/foody-upload-api-foody-mobile-18-jpg-181023082644.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Bánh Bao Thọ Phát - Nguyễn Tri Phương ',' 78 Nguyễn Tri Phương, P. 7, Quận 5 , TP. HCM ','https://images.foody.vn/res/g1/3100/prof/s640x400/foody-mobile-tho-phat-jpg-980-636044605184486406.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Cheesecake Ngon ',' 2 chi nhánh ','https://images.foody.vn/res/g5/44454/prof/s640x400/foody-mobile-cheese-cake-jpg-576-636119657716824761.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('TacoLeo - Ẩm Thực Mexico - Cao Bá Nhạ ',' 20 Cao Bá Nhạ, P. Nguyễn Cư Trinh, Quận 1 , TP. HCM ','https://images.foody.vn/res/g5/49674/prof/s640x400/foody-mobile-cao-ba-nha-jpg.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Sumo BBQ - Buffet Lẩu & Nướng ',' 11 chi nhánh ','https://images.foody.vn/res/g1/4074/prof/s640x400/foody-mobile-12-jpg-340-636169623888144042.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Red Chilli Seafood Buffet - CHLOE Gallery ',' 2 - 6 Phan Văn Chương, Phú Mỹ Hưng, Quận 7 , TP. HCM ','https://images.foody.vn/res/g1/562/prof/s640x400/foody-mobile-109-jpg-361-635858632711885387.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Sushi Dining AOI - Món Nhật ',' 53 - 55 Bà Huyện Thanh Quan, P. 6, Quận 3 , TP. HCM ','https://images.foody.vn/res/g1/726/prof/s640x400/foody-mobile-sushi-set-aoi-jpg-270-636317608417017315.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Hana Buffet ',' 6 chi nhánh ','https://images.foody.vn/res/g2/13986/prof/s640x400/foody-mobile-hana-buffet-pvc-mb-j-201-635924466203859693.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Buffet Windsor - Cafe Central An Dong - Windsor Plaza ',' Windsor Plaza, 18 An Dương Vương, Quận 5 , TP. HCM ','https://images.foody.vn/res/g1/8/prof/s640x400/foody-mobile-dpxxrdae-jpg-176-635851879399811855.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Langfarm Buffet - Trần Hưng Đạo ',' 771 - 773 - 775 Trần Hưng Đạo, P. 1, Quận 5 , TP. HCM ','https://images.foody.vn/res/g22/215893/prof/s640x400/2018123152530-langfarm-buffet-tran-hung-dao-copy.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('La Brasserie Restaurant - Hotel Nikko Saigon ',' Hotel Nikko Saigon, 235 Nguyễn Văn Cừ, Quận 1, Quận 1 , TP. HCM ','https://images.foody.vn/res/g4/33141/prof/s640x400/2017619161034-img_2388.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống Hoàng Yến Buffet ',' 5 chi nhánh ','https://images.foody.vn/res/g1/305/prof/s640x400/foody-mobile-dsc_0886-jpg-219-636118800111396860.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Cheap Eats - Seafood BBQ Buffet ',' Tầng 5, 9 Nguyễn Trãi, P. Bến Thành, Quận 1 , TP. HCM ','https://images.foody.vn/res/g26/255427/prof/s640x400/foody-mobile-1-jpg-112-636258618783661123.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Hệ thống King BBQ ',' 24 chi nhánh ','https://images.foody.vn/res/g5/46902/prof/s640x400/foody-mobile-gff-jpg-282-635768935243754658.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Parkview Buffet - New World Saigon Hotel ',' New World Saigon Hotel, 76 Lê Lai, P. Bến Nghé, Quận 1 , TP. HCM ','https://images.foody.vn/res/g2/15012/prof/s640x400/2017539570-_parkview-2-.jpg');
+INSERT INTO `stores` (`name`, `address`, `image`) VALUES ('Fujiya Restaurant - Yakiniku Nabe Buffet ',' B3-01 Vincom Center, 72 Lê Thánh Tôn, Quận 1 , TP. HCM ','https://images.foody.vn/res/g10/94289/prof/s640x400/foody-upload-api-foody-mobile-2-jpg-180602081629.jpg');
 
 
 -- --------------------------------------------------------
