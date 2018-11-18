@@ -1,24 +1,28 @@
 # Web-Admin
 
-Go to 
-```
-http://localhost/phpmyadmin/
-```
-Create database
+1. Go to 
+    ```
+    http://localhost/phpmyadmin/
+    ```
+2. Create database
 
-Go to db/data_phukien.sql, copy-paste to database just created
+3. Go to 
+    ```
+    db/data_app.sql
+    ``` 
+    copy-paste to database just created
 
-Config file .env
+4. Config file .env
 
-Go to 
-```
-http://localhost/Web-Admin/public/auth/login
-```
-Username
-```
-admin
-```
-Password
-```
-123
-```
+5. Go to 
+    ```
+    http://localhost/Web-Admin/public/auth/login
+    ```
+    Username
+    ```
+    admin
+    ```
+    Password
+    ```
+    123
+    ```
