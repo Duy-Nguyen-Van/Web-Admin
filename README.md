@@ -14,5 +14,11 @@ Go to
 ```
 http://localhost/Web-Admin/public/auth/login
 ```
-Username: admin
-Password: 123
+Username
+```
+admin
+```
+Password
+```
+123
+```
