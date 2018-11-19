@@ -24,11 +24,11 @@
                             <label>Category</label>
                                 <select class="form-control" name="txtCategory" value="{{$item->id_type}}" required>
                                     {{--  @if($item->id_type == 1)
-                                        <option selected value="1">Áo thun</option>
-                                        <option value="2">Áo sơ mi</option>
+                                        <option selected value="1"></option>
+                                        <option value="2">i</option>
                                     @else
-                                        <option value="1">Áo thun</option>
-                                        <option selected value="2">Áo sơ mi</option>
+                                        <option value="1">n</option>
+                                        <option selected value="2"></option>
                                     @endif  --}}
                                     <?php  $cate = DB::table('type_products')->select('id','name')->get();  ?>
                                     @foreach($cate as $data)

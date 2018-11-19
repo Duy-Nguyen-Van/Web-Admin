@@ -24,8 +24,8 @@
                         <div class="form-group">
                             <label>Category</label>
                                 <select class="form-control" name="txtCategory">
-                                    {{--  <option selected value="1">Áo Thun</option>
-                                    <option value="2">Áo Sơ Mi</option>  --}}
+                                    {{--  <option selected value="1"></option>
+                                    <option value="2"></option>  --}}
                                     <?php  $cate = DB::table('type_products')->select('id','name')->get();  ?>
                                     @foreach($cate as $item)
                                         <option value="{{$item->id}}">{{$item->name}}</option>

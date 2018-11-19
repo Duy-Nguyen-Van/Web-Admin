@@ -29,6 +29,7 @@ class ProductController extends Controller
         $item = new Products;
         $item->name = $req->txtName;
         $item->id_type = $req->txtCategory;
+        $item->id_store = $req->txtStore;
         $item->description = $req->txtDescription;
         $item->price = $req->txtPrice;
         $item->promotion = $req->txtPromotion;
@@ -63,6 +64,7 @@ class ProductController extends Controller
         $item = Products::find($id);
         $item->name = $req->txtName;
         $item->id_type = $req->txtCategory;
+        $item->id_store = $req->txtStore;
         $item->description = $req->txtDescription;
         $item->price = $req->txtPrice;
         $item->promotion = $req->txtPromotion;

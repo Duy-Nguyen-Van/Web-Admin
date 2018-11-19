@@ -25,11 +25,12 @@
                             <th>Image</th>
                             <th>Name</th>
                             <th>Category</th>
+                            <th>Store</th>
                             <th>Price</th>
-                            <th>Date </th>
+                            <!-- <th>Date </th> -->
                             <th>Delete</th>
                             <th>Edit</th>
-                            <th>Upload</th>
+                            <!-- <th>Upload</th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -45,20 +46,22 @@
                                     @endif
                                 </td>
                                 <td>
+                     <?php $cate = DB::table('stores')->where('id',$item->id_store)->first(); ?>
+                                    @if(!empty($store->name))
+                                        {!! $store->name !!}
+                                    @endif
+                                </td>
+                                <td>
                                 @if($item->promotion == 0) 
                                     {{number_format($item->price, 3)}} VND
                                 @else
                                     {{number_format($item->promotion, 3)}} VND
                                 @endif
                                 </td>
-                                <td>
-                                    <?php
-                                        echo \Carbon\Carbon::createFromTimeStamp(strtotime($item->created_at))->diffForHumans();
-                                     ?>
-                                </td>
+                                
                                 <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return xacNhanXoa('Bạn có xác nhận xóa?')" href="{{route('admin.product.getDelete', $item->id)}}">Delete</a></td>
                                 <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="{{route('admin.product.getEdit', $item->id)}}">Edit</a></td>
-                                <td class="center"><i class="far fa-arrow-alt-circle-up"></i> <a href="{{route('admin.product.CreateProducts', $item->id)}}">Upload</a></td>
+                                <!-- <td class="center"><i class="far fa-arrow-alt-circle-up"></i> <a href="{{route('admin.product.CreateProducts', $item->id)}}">Upload</a></td> -->
                             </tr>
                         @endforeach
                     </tbody>
