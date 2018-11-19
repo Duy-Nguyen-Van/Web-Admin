@@ -6,12 +6,10 @@
     ```
 2. Create database
 
-3. Go to 
+3. Import file
     ```
     db/data_app.sql
     ``` 
-    copy-paste to database just created
-
 4. Config file .env
 
 5. Go to 
