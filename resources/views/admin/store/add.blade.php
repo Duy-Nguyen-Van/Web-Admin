@@ -18,7 +18,7 @@
                         
                         <div class="form-group">
                             <label>Name</label>
-                            <input class="form-control" name="txtName" placeholder="Nhập tên sản phẩm" value="{!! old('txtName') !!}" />
+                            <input class="form-control" name="txtName" placeholder="Nhập tên cửa hàng" value="{!! old('txtName') !!}" />
                         </div>
 
 

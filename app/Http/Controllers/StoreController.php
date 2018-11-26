@@ -32,7 +32,7 @@ class StoreController extends Controller
         $item->image = $file_name;
     	$req->file('fImages')->move('../resources/images', $file_name);
         $item->save();
-        return redirect()->route('admin.store.list')->with(['flash_level'=>'success', 'flash_message'=>'Successfully added product']);
+        return redirect()->route('admin.store.list')->with(['flash_level'=>'success', 'flash_message'=>'Successfully added store']);
     }
     
     //Go to list product page
@@ -46,7 +46,7 @@ class StoreController extends Controller
         $item = Stores::find($id);
         File::delete('../resources/images/'.$item->image);
         $item->delete($id);
-        return redirect()->route('admin.store.list')->with(['flash_level'=>'success','flash_message'=>'Successfully deleted product']);
+        return redirect()->route('admin.store.list')->with(['flash_level'=>'success','flash_message'=>'Successfully deleted store']);
     }
 
     //Go to edit prodcut page
@@ -73,7 +73,7 @@ class StoreController extends Controller
      		echo "Không có file";
      	}
         $item->save();
-        return redirect()->route('admin.store.list')->with(['flash_level'=>'success','flash_message'=>'Successfully updated product']);
+        return redirect()->route('admin.store.list')->with(['flash_level'=>'success','flash_message'=>'Successfully updated store']);
     }
 
     //upload product images
@@ -110,7 +110,7 @@ class StoreController extends Controller
         // $params = ['data' => $data];
         // $response = $zalo->post(ZaloEndpoint::API_OA_STORE_CREATE_PRODUCT, $params);
         // $result = $response->getDecodedBody(); // result
-        return redirect()->route('admin.store.list')->with(['flash_level'=>'success', 'flash_message'=>'Successfully uploaded product']);
+        return redirect()->route('admin.store.list')->with(['flash_level'=>'success', 'flash_message'=>'Successfully uploaded store']);
         
     }
 

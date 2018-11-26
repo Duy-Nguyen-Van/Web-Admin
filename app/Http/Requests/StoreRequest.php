@@ -24,8 +24,8 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'txtName'=> 'required|unique:store,name',
-            'txtDescription'=> 'required',
+            'txtName'=> 'required|unique:stores,name',
+            'txtAddress'=> 'required',
             'fImages' => 'required|image'
         ];
     }

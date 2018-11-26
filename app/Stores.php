@@ -9,8 +9,8 @@ class Stores extends Model
     //Connect to table products
     protected $table = 'stores';
 
-    //Set relationship between table type_products and table products
-    // public function type_products() {
-    // 	return $this->belongTo('App\Type_products', 'id_type', 'id');
-    // }
+    // Set relationship between table store and table products
+     public function product() {
+        return $this->hasMany('App\Products', 'id_store', 'id');
+    }
 }

@@ -13,4 +13,9 @@ class Products extends Model
     public function type_products() {
     	return $this->belongTo('App\Type_products', 'id_type', 'id');
     }
+
+    //Set relationship between table stores and table products
+    public function stores() {
+    	return $this->belongTo('App\Stores', 'id_store', 'id');
+    }
 }

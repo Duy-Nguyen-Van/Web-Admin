@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Products;
 use App\ProductImage;
-use App\Http\Requests\StoreRequest;
+use App\Http\Requests\ProductRequest;
 use Illuminate\Support\Facades\Input;
 use File;
 use App\Http\Requests\Zalo;

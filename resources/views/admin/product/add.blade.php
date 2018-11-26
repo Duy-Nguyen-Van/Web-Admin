@@ -34,6 +34,18 @@
                         </div>
 
                         <div class="form-group">
+                            <label>Store</label>
+                                <select class="form-control" name="txtStore">
+                                    {{--  <option selected value="1"></option>
+                                    <option value="2"></option>  --}}
+                                    <?php  $cate = DB::table('stores')->select('id','name')->get();  ?>
+                                    @foreach($cate as $item)
+                                        <option value="{{$item->id}}">{{$item->name}}</option>
+                                    @endforeach
+                                </select>
+                        </div>
+
+                        <div class="form-group">
                             <label>Description</label>
                             <textarea class="form-control" name="txtDescription">{{old('txtDescription')}}</textarea>
                         </div>
