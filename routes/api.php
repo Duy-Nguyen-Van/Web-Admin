@@ -24,9 +24,12 @@ Route::get('/hello-world', function(Request $request){
 //Product API
 Route::get('/getproductlist', 'ProductController@getProductAPIList');
 Route::get('/deleteproduct/{id}', 'ProductController@getProductAPIDelete');
-Route::get('/deleteproduct/{id}', 'ProductController@getProductAPIDelete');
-
 
 //Store API
 Route::get('/getstorelist', 'StoreController@getStoreAPIList');
+Route::get('/deletestore/{id}', 'StoreController@getStoreAPIDelete');
+
+//User API
+Route::get('/getuserlist', 'UserController@getUserAPIList');
+Route::get('/deleteuser/{id}', 'UserController@getUserAPIDelete');
 

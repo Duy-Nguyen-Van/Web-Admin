@@ -54,6 +54,13 @@ class StoreController extends Controller
         return redirect()->route('admin.store.list')->with(['flash_level'=>'success','flash_message'=>'Successfully deleted store']);
     }
 
+    public function getStoreAPIDelete($id){
+        $item = Stores::find($id);
+        File::delete('../resources/images/'.$item->image);
+        $item->delete($id);
+        return response() -> json([$item]);
+    }
+
     //Go to edit prodcut page
     public function getEdit($id){
         $item = Stores::find($id);

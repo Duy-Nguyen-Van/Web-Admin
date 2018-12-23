@@ -14,6 +14,11 @@ class UserController extends Controller
         return view('admin.user.list',compact('User'));
     }
 
+    public function getUserAPIList(){
+        $User = User::select('*')->get();
+        return response() -> json([$User]);
+    }
+
     public function getAdd(){
         return view('admin.user.add');
     }
@@ -35,6 +40,12 @@ class UserController extends Controller
         $user->delete($id);
         return redirect()->route('admin.user.list')->with(['flash_level'=>'success','flash_message'=>'Successfully deleted user']);
 
+    }
+
+    public function getUserAPIDelete($id){
+        $user = User::find($id);
+        $user->delete($id);
+        return response() -> json([$user]);
     }
 
     public function getEdit(){
