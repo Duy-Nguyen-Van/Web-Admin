@@ -16,7 +16,7 @@ class UserController extends Controller
 
     public function getUserAPIList(){
         $User = User::select('*')->get();
-        return response() -> json([$User]);
+        return response() -> json($User);
     }
 
     public function getAdd(){
@@ -45,7 +45,7 @@ class UserController extends Controller
     public function getUserAPIDelete($id){
         $user = User::find($id);
         $user->delete($id);
-        return response() -> json([$user]);
+        return response() -> json($user);
     }
 
     public function getEdit(){
