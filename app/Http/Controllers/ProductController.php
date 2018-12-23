@@ -51,7 +51,7 @@ class ProductController extends Controller
         $item->image = $file_name;
     	$req->file('fImages')->move('../resources/images', $file_name);
         $item->save();
-        return response() -> json([$item]);
+        return response() -> json($item);
     }
     
     //Go to list product page
