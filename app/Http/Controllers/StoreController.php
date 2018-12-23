@@ -43,7 +43,7 @@ class StoreController extends Controller
 
     public function getStoreAPIList(){
         $listItem = Stores::select('*')->get();
-        return response() -> json([$listItem]);
+        return response() -> json($listItem);
     }
 
     //Delete product
@@ -58,7 +58,7 @@ class StoreController extends Controller
         $item = Stores::find($id);
         File::delete('../resources/images/'.$item->image);
         $item->delete($id);
-        return response() -> json([$item]);
+        return response() -> json($item);
     }
 
     //Go to edit prodcut page

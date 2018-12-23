@@ -38,6 +38,21 @@ class ProductController extends Controller
         $item->save();
         return redirect()->route('admin.product.list')->with(['flash_level'=>'success', 'flash_message'=>'Successfully added product']);
     }
+
+    public function postProductAPIAdd(ProductRequest $req){
+        $file_name = $req->file('fImages')->getClientOriginalName();
+        $item = new Products;
+        $item->name = $req->txtName;
+        $item->id_type = $req->txtCategory;
+        $item->id_store = $req->txtStore;
+        $item->description = $req->txtDescription;
+        $item->price = $req->txtPrice;
+        $item->promotion = $req->txtPromotion;
+        $item->image = $file_name;
+    	$req->file('fImages')->move('../resources/images', $file_name);
+        $item->save();
+        return response() -> json([$item]);
+    }
     
     //Go to list product page
     public function getList(){
@@ -47,7 +62,7 @@ class ProductController extends Controller
 
     public function getProductAPIList(){
         $listItem = Products::select('*')->get();
-        return response() -> json([$listItem]);
+        return response() -> json($listItem);
     }
 
     //Delete product
@@ -63,7 +78,7 @@ class ProductController extends Controller
         $item = Products::find($id);
         File::delete('../resources/images/'.$item->image);
         $item->delete($id);
-        return response() -> json([$item]);
+        return response() -> json($item);
     }
 
     //Go to edit prodcut page
