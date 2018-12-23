@@ -16,3 +16,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/hello-world', function(Request $request){
+    return response()->json('Hello World! Welcome to codingpearls.com', 200);
+});
+
+//Product API
+Route::get('/getproductlist', 'ProductController@getProductAPIList');
+Route::get('/deleteproduct/{id}', 'ProductController@getProductAPIDelete');
+Route::get('/deleteproduct/{id}', 'ProductController@getProductAPIDelete');
+
+
+//Store API
+Route::get('/getstorelist', 'StoreController@getStoreAPIList');
+

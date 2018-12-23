@@ -45,12 +45,25 @@ class ProductController extends Controller
         return view('admin.product.list',compact('listItem'));
     }
 
+    public function getProductAPIList(){
+        $listItem = Products::select('*')->get();
+        return response() -> json([$listItem]);
+    }
+
     //Delete product
     public function getDelete($id){
         $item = Products::find($id);
         File::delete('../resources/images/'.$item->image);
         $item->delete($id);
         return redirect()->route('admin.product.list')->with(['flash_level'=>'success','flash_message'=>'Successfully deleted product']);
+    }
+
+
+    public function getProductAPIDelete($id){
+        $item = Products::find($id);
+        File::delete('../resources/images/'.$item->image);
+        $item->delete($id);
+        return response() -> json([$item]);
     }
 
     //Go to edit prodcut page

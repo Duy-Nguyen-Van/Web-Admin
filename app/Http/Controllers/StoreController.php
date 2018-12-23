@@ -41,6 +41,11 @@ class StoreController extends Controller
         return view('admin.store.list',compact('listItem'));
     }
 
+    public function getStoreAPIList(){
+        $listItem = Stores::select('*')->get();
+        return response() -> json([$listItem]);
+    }
+
     //Delete product
     public function getDelete($id){
         $item = Stores::find($id);
