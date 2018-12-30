@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 19, 2018 at 07:07 AM
+-- Generation Time: Dec 30, 2018 at 12:15 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -68,7 +68,7 @@ CREATE TABLE `bills` (
 --
 
 INSERT INTO `bills` (`id`, `id_customer`, `date_order`, `total`, `note`, `checkout`, `created_at`, `updated_at`) VALUES
-(3, 6, '2018-01-14', 50, NULL, 0, '2018-01-14 08:27:14', '2018-01-15 00:29:43'),
+(3, 6, '2018-01-14', 50, NULL, 1, '2018-01-14 08:27:14', '2018-11-19 11:17:45'),
 (4, 6, '2018-01-14', 450, NULL, 1, '2018-01-14 08:27:49', '2018-01-15 00:29:57'),
 (5, 6, '2018-01-14', 599, NULL, 1, '2018-01-14 09:24:03', '2018-01-15 00:29:58');
 
@@ -362,40 +362,40 @@ CREATE TABLE `stores` (
 --
 
 INSERT INTO `stores` (`id`, `name`, `address`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Morico - Contemporary Japanese Lifestyle - Lê Lợi ', ' 30 Lê Lợi, P. Bến Nghé, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g1/595/prof/s640x400/foody-upload-api-foody-mobile-10-jpg-180508140146.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(2, 'Hệ thống Monkey In Black Cafe ', ' 2 chi nhánh ', 'https://images.foody.vn/res/g9/89822/prof/s640x400/foody-mobile-zas-jpg-258-636086627918162406.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(1, 'Morico - Contemporary Japanese Lifestyle - Lê Lợi', '30 Lê Lợi, Bến Nghé, Quận 1, Hồ Chí Minh', 'https://images.foody.vn/res/g1/595/prof/s640x400/foody-upload-api-foody-mobile-10-jpg-180508140146.jpg', '0000-00-00 00:00:00', '2018-11-26 16:59:23'),
+(2, 'Hệ thống Monkey In Black Cafe ', '698 Sư Vạn Hạnh, Quận 10, TPHCM', 'https://images.foody.vn/res/g9/89822/prof/s640x400/foody-mobile-zas-jpg-258-636086627918162406.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (3, 'Oromia Coffee - Nam Kỳ Khởi Nghĩa ', ' 193A/D3 Nam Kỳ Khởi Nghĩa, Quận 3 , TP. HCM ', 'https://images.foody.vn/res/g12/112158/prof/s640x400/foody-mobile-1-jpg-194-636289977329979410.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(4, 'Hệ thống Starbucks Coffee - HCM ', ' 25 chi nhánh ', 'https://images.foody.vn/res/g2/15031/prof/s640x400/foody-mobile-mobile-jpg-409-635744522405981690.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(5, 'Hệ thống Morico - Modern Japanese - Food, Sushi & Dessert ', ' 3 chi nhánh ', 'https://images.foody.vn/res/g1/742/prof/s640x400/foody-upload-api-foody-mobile-9-jpg-180508140028.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(6, 'Hệ thống Partea ', ' 2 chi nhánh ', 'https://images.foody.vn/res/g8/77729/prof/s640x400/foody-mobile-12-jpg-868-636171531644694064.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(7, 'Hệ thống Đen Đá Cafe ', ' 7 chi nhánh ', 'https://images.foody.vn/res/g12/110335/prof/s640x400/foody-mobile-mhfo7qz6-jpg-187-636130047827225698.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(8, 'Hệ thống Morico - Contemporary Japanese Lifestyle ', ' 2 chi nhánh ', 'https://images.foody.vn/res/g1/900/prof/s640x400/foody-upload-api-foody-mobile-7-jpg-180508135106.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(4, 'Hệ thống Starbucks Coffee - HCM ', 'Góc Phạm Hồng Thái & Nguyễn Thị Nghĩa,  Quận 1, TPHCM', 'https://images.foody.vn/res/g2/15031/prof/s640x400/foody-mobile-mobile-jpg-409-635744522405981690.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(5, 'Hệ thống Morico - Modern Japanese - Food, Sushi & Dessert ', '92 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh', 'https://images.foody.vn/res/g1/742/prof/s640x400/foody-upload-api-foody-mobile-9-jpg-180508140028.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(6, 'Hệ thống Partea ', 'Tầng 4, 42 Nguyễn Huệ,  Quận 1, TPHCM', 'https://images.foody.vn/res/g8/77729/prof/s640x400/foody-mobile-12-jpg-868-636171531644694064.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(7, 'Hệ thống Đen Đá Cafe ', '110 Đường Lê Văn Sỹ, Phường 10, Phú Nhuận, Hồ Chí Minh', 'https://images.foody.vn/res/g12/110335/prof/s640x400/foody-mobile-mhfo7qz6-jpg-187-636130047827225698.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(8, 'Hệ thống Morico - Contemporary Japanese Lifestyle ', '30 Lê Lợi, Bến Nghé, Quận 1, Hồ Chí Minh', 'https://images.foody.vn/res/g1/900/prof/s640x400/foody-upload-api-foody-mobile-7-jpg-180508135106.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (9, 'Paris Baguette - Cao Thắng ', ' 1 Cao Thắng, P. 2, Quận 3 , TP. HCM ', 'https://images.foody.vn/res/g1/4336/prof/s640x400/foody-upload-api-foody-mobile--b5e49debee037df4559-180704101653.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(10, 'Hệ thống Phúc Long Coffee & Tea Express ', ' 30 chi nhánh ', 'https://images.foody.vn/res/g9/87015/prof/s640x400/foody-mobile-phuc-long-ly-tu-tron-343-635791628128985595.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(10, 'Hệ thống Phúc Long Coffee & Tea Express ', 'Tầng Trệt,  Tầng G Crescent Mall, 101 Tôn Dật Tiên, P. Tân Phú,  Quận 7, TPHCM', 'https://images.foody.vn/res/g9/87015/prof/s640x400/foody-mobile-phuc-long-ly-tu-tron-343-635791628128985595.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (11, 'Trà Sữa Gong Cha - 貢茶 - Hồ Tùng Mậu ', ' 83 Hồ Tùng Mậu, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g10/96530/prof/s640x400/foody-mobile-gong-cha2-jpg-305-636173909122516269.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (12, 'Moon Fast Food - Món Hàn - Xuân Hồng ', ' 53 Xuân Hồng, P. 12, Quận Tân Bình , TP. HCM ', 'https://images.foody.vn/res/g8/71782/prof/s640x400/foody-mobile-mon-fastfood-mb-jpg-441-635895077676626146.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (13, 'Morico - Contemporary Japanese Lifestyle - Vincom Center ', ' Tầng B3 Vincom Center, 70 - 72 Lê Thánh Tôn, P. Bến Nghé, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g1/742/prof/s640x400/foody-upload-api-foody-mobile-9-jpg-180508140028.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(14, 'Hệ thống Paris Baguette ', ' 4 chi nhánh ', 'https://images.foody.vn/res/g1/4336/prof/s640x400/foody-upload-api-foody-mobile--b5e49debee037df4559-180704101653.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(14, 'Hệ thống Paris Baguette ', '45A Lý Tự Trọng, Bến Nghé, Quận 1, Hồ Chí Minh', 'https://images.foody.vn/res/g1/4336/prof/s640x400/foody-upload-api-foody-mobile--b5e49debee037df4559-180704101653.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (15, 'Moon Fast Food - Món Hàn - Xuân Hồng ', ' 53 Xuân Hồng, P. 12, Quận Tân Bình , TP. HCM ', 'https://images.foody.vn/res/g8/71782/prof/s640x400/foody-mobile-mon-fastfood-mb-jpg-441-635895077676626146.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(16, 'Hệ thống Fly Cupcake ', ' 2 chi nhánh ', 'https://images.foody.vn/res/g1/6676/prof/s640x400/foody-mobile-flycupcake-jpg-612-635657179559706401.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(17, 'Hệ thống Star Kitchen ', ' 3 chi nhánh ', 'https://images.foody.vn/res/g10/90625/prof/s640x400/foody-upload-api-foody-mobile-21-jpg-181114113351.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(18, 'Hệ thống Dallas Cakes & Coffee ', ' 5 chi nhánh ', 'https://images.foody.vn/res/g1/9138/prof/s640x400/foody-upload-api-foody-mobile-3-jpg-180409101750.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(16, 'Hệ thống Fly Cupcake ', '25B Tú Xương, P. 7,  Quận 3, TPHCM', 'https://images.foody.vn/res/g1/6676/prof/s640x400/foody-mobile-flycupcake-jpg-612-635657179559706401.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(17, 'Hệ thống Star Kitchen ', '8a/11c2 Thái Văn Lung, Bến Nghé, Quận 1, Hồ Chí Minh', 'https://images.foody.vn/res/g10/90625/prof/s640x400/foody-upload-api-foody-mobile-21-jpg-181114113351.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(18, 'Hệ thống Dallas Cakes & Coffee ', '53 Phan Xích Long, Phường 2, Phú Nhuận, Hồ Chí Minh', 'https://images.foody.vn/res/g1/9138/prof/s640x400/foody-upload-api-foody-mobile-3-jpg-180409101750.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (19, 'Buffet Windsor - Cafe Central An Dong - Windsor Plaza ', ' Windsor Plaza, 18 An Dương Vương, Quận 5 , TP. HCM ', 'https://images.foody.vn/res/g1/8/prof/s640x400/foody-mobile-dpxxrdae-jpg-176-635851879399811855.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(20, 'Hệ thống TOUS les JOURS SG ', ' 6 chi nhánh ', 'https://images.foody.vn/res/g1/520/prof/s640x400/foody-upload-api-foody-mobile-tlj-jpg-180521103523.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(20, 'Hệ thống TOUS les JOURS SG ', '66B Cách Mạng Tháng 8,  Quận 3, TP. HCM', 'https://images.foody.vn/res/g1/520/prof/s640x400/foody-upload-api-foody-mobile-tlj-jpg-180521103523.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (21, 'Chewy Chewy - Cafe & Bánh - Trần Hưng Đạo ', ' 34 Trần Hưng Đạo, P. Phạm Ngũ Lão, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g1/4139/prof/s640x400/foody-upload-api-foody-mobile-18-jpg-181023082644.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (22, 'Bánh Bao Thọ Phát - Nguyễn Tri Phương ', ' 78 Nguyễn Tri Phương, P. 7, Quận 5 , TP. HCM ', 'https://images.foody.vn/res/g1/3100/prof/s640x400/foody-mobile-tho-phat-jpg-980-636044605184486406.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(23, 'Hệ thống Cheesecake Ngon ', ' 2 chi nhánh ', 'https://images.foody.vn/res/g5/44454/prof/s640x400/foody-mobile-cheese-cake-jpg-576-636119657716824761.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(23, 'Hệ thống Cheesecake Ngon ', '70 Đường Số 66, Thảo Điền, Quận 2, Hồ Chí Minh', 'https://images.foody.vn/res/g5/44454/prof/s640x400/foody-mobile-cheese-cake-jpg-576-636119657716824761.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (24, 'TacoLeo - Ẩm Thực Mexico - Cao Bá Nhạ ', ' 20 Cao Bá Nhạ, P. Nguyễn Cư Trinh, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g5/49674/prof/s640x400/foody-mobile-cao-ba-nha-jpg.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(25, 'Hệ thống Sumo BBQ - Buffet Lẩu & Nướng ', ' 11 chi nhánh ', 'https://images.foody.vn/res/g1/4074/prof/s640x400/foody-mobile-12-jpg-340-636169623888144042.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(25, 'Hệ thống Sumo BBQ - Buffet Lẩu & Nướng ', '20 Bis Nguyễn Đình Chiểu,  Quận 1, TPHCM', 'https://images.foody.vn/res/g1/4074/prof/s640x400/foody-mobile-12-jpg-340-636169623888144042.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (26, 'Red Chilli Seafood Buffet - CHLOE Gallery ', ' 2 - 6 Phan Văn Chương, Phú Mỹ Hưng, Quận 7 , TP. HCM ', 'https://images.foody.vn/res/g1/562/prof/s640x400/foody-mobile-109-jpg-361-635858632711885387.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (27, 'Sushi Dining AOI - Món Nhật ', ' 53 - 55 Bà Huyện Thanh Quan, P. 6, Quận 3 , TP. HCM ', 'https://images.foody.vn/res/g1/726/prof/s640x400/foody-mobile-sushi-set-aoi-jpg-270-636317608417017315.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(28, 'Hệ thống Hana Buffet ', ' 6 chi nhánh ', 'https://images.foody.vn/res/g2/13986/prof/s640x400/foody-mobile-hana-buffet-pvc-mb-j-201-635924466203859693.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(28, 'Hệ thống Hana Buffet ', '243 Điện Biên Phủ, P. 6,  Quận 3, TPHCM', 'https://images.foody.vn/res/g2/13986/prof/s640x400/foody-mobile-hana-buffet-pvc-mb-j-201-635924466203859693.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (29, 'Buffet Windsor - Cafe Central An Dong - Windsor Plaza ', ' Windsor Plaza, 18 An Dương Vương, Quận 5 , TP. HCM ', 'https://images.foody.vn/res/g1/8/prof/s640x400/foody-mobile-dpxxrdae-jpg-176-635851879399811855.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (30, 'Langfarm Buffet - Trần Hưng Đạo ', ' 771 - 773 - 775 Trần Hưng Đạo, P. 1, Quận 5 , TP. HCM ', 'https://images.foody.vn/res/g22/215893/prof/s640x400/2018123152530-langfarm-buffet-tran-hung-dao-copy.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (31, 'La Brasserie Restaurant - Hotel Nikko Saigon ', ' Hotel Nikko Saigon, 235 Nguyễn Văn Cừ, Quận 1, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g4/33141/prof/s640x400/2017619161034-img_2388.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(32, 'Hệ thống Hoàng Yến Buffet ', ' 5 chi nhánh ', 'https://images.foody.vn/res/g1/305/prof/s640x400/foody-mobile-dsc_0886-jpg-219-636118800111396860.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(32, 'Hệ thống Hoàng Yến Buffet ', '07-09 Ngô Đức Kế, Q.1, TP.HCM', 'https://images.foody.vn/res/g1/305/prof/s640x400/foody-mobile-dsc_0886-jpg-219-636118800111396860.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (33, 'Cheap Eats - Seafood BBQ Buffet ', ' Tầng 5, 9 Nguyễn Trãi, P. Bến Thành, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g26/255427/prof/s640x400/foody-mobile-1-jpg-112-636258618783661123.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(34, 'Hệ thống King BBQ ', ' 24 chi nhánh ', 'https://images.foody.vn/res/g5/46902/prof/s640x400/foody-mobile-gff-jpg-282-635768935243754658.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(34, 'Hệ thống King BBQ ', 'Tầng Hầm 3,  Tầng B3, Vincom Center, 72 Lê Thánh Tôn, P. Bến Nghé,  Quận 1, TP. HCM', 'https://images.foody.vn/res/g5/46902/prof/s640x400/foody-mobile-gff-jpg-282-635768935243754658.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (35, 'Parkview Buffet - New World Saigon Hotel ', ' New World Saigon Hotel, 76 Lê Lai, P. Bến Nghé, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g2/15012/prof/s640x400/2017539570-_parkview-2-.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (36, 'Fujiya Restaurant - Yakiniku Nabe Buffet ', ' B3-01 Vincom Center, 72 Lê Thánh Tôn, Quận 1 , TP. HCM ', 'https://images.foody.vn/res/g10/94289/prof/s640x400/foody-upload-api-foody-mobile-2-jpg-180602081629.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (37, 'Phúc Long Coffee & Tea - Crescent Mall', 'GF-21B Tầng Trệt Khu crescent mall 101, Nguyễn Văn Linh, Tân Phú, Quận 7, Hồ Chí Minh', 'https://images.foody.vn/res/g1/6644/prof/s576x330/foody-mobile-4-jpg-963-635695344335948074.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
